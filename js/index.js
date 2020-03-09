@@ -95,14 +95,14 @@ newButton.textContent = siteContent["cta"]["button"];
 
 //Add content to h4
 const mainText = document.querySelectorAll("h4");
-mainText[0].textContent = siteContent["main-content"]["features-h4"];
 
+mainText[0].textContent = siteContent["main-content"]["features-h4"];
 mainText[1].textContent = siteContent["main-content"]["about-h4"];
 
 //Add content to Features P
 const newP = document.querySelectorAll("p");
-newP[0].textContent = siteContent["main-content"]["features-content"];
 
+newP[0].textContent = siteContent["main-content"]["features-content"];
 newP[1].textContent = siteContent["main-content"]["about-content"];
 
 //Add content to BOTTOM-CONTENT h4
@@ -111,9 +111,15 @@ const bottomTitle = document.querySelectorAll(
 );
 
 bottomTitle[0].textContent = siteContent["main-content"]["services-h4"];
-
 bottomTitle[1].textContent = siteContent["main-content"]["product-h4"];
-
 bottomTitle[2].textContent = siteContent["main-content"]["vision-h4"];
 
-mainText[1].textContent = siteContent["main-content"]["about-h4"];
+
+//Add content to BOTTOM P
+
+const newBottomP = document.querySelectorAll(".bottom-content .text-content p");
+
+newBottomP[0].textContent = siteContent["main-content"]["services-content"];
+newBottomP[1].textContent = siteContent["main-content"]["product-content"];
+newBottomP[2].textContent = siteContent["main-content"]["vision-content"];
+
