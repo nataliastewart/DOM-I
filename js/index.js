@@ -33,12 +33,12 @@ const siteContent = {
   },
   contact: {
     "contact-h4": "Contact",
-    "address": "123 Way 456 Street Somewhere, USA",
-    "phone": "1 (888) 888-8888",
-    "email": "sales@greatidea.io"
+    address: "123 Way 456 Street Somewhere, USA",
+    phone: "1 (888) 888-8888",
+    email: "sales@greatidea.io"
   },
   footer: {
-    "copyright": "Copyright Great Idea! 2018"
+    copyright: "Copyright Great Idea! 2018"
   }
 };
 
@@ -84,7 +84,6 @@ navItems5.textContent = siteContent["nav"]["nav-item-5"];
 const navItems6 = navContent[5];
 navItems6.textContent = siteContent["nav"]["nav-item-6"];
 
-
 //Add content to h1
 const newH1 = document.querySelector("h1");
 newH1.textContent = siteContent["cta"]["h1"];
@@ -114,7 +113,6 @@ bottomTitle[0].textContent = siteContent["main-content"]["services-h4"];
 bottomTitle[1].textContent = siteContent["main-content"]["product-h4"];
 bottomTitle[2].textContent = siteContent["main-content"]["vision-h4"];
 
-
 //Add content to BOTTOM P
 
 const newBottomP = document.querySelectorAll(".bottom-content .text-content p");
@@ -122,8 +120,6 @@ const newBottomP = document.querySelectorAll(".bottom-content .text-content p");
 newBottomP[0].textContent = siteContent["main-content"]["services-content"];
 newBottomP[1].textContent = siteContent["main-content"]["product-content"];
 newBottomP[2].textContent = siteContent["main-content"]["vision-content"];
-
-
 
 //Add content to CONTACT Title
 const contactInfo = document.querySelectorAll(" .contact h4");
@@ -137,7 +133,9 @@ contactP[0].textContent = siteContent["contact"]["address"];
 contactP[1].textContent = siteContent["contact"]["phone"];
 contactP[2].textContent = siteContent["contact"]["email"];
 
+//Add content to Footer
 
+//Add content to CONTACT Title
+const footerInfo = document.querySelectorAll("footer p");
 
-
-
+footerInfo[0].textContent = siteContent["footer"]["copyright"];
