@@ -1,5 +1,5 @@
 const siteContent = {
-  nav: {
+  "nav": {
     "nav-item-1": "Services",
     "nav-item-2": "Product",
     "nav-item-3": "Vision",
@@ -8,9 +8,9 @@ const siteContent = {
     "nav-item-6": "Contact",
     "img-src": "img/logo.png"
   },
-  cta: {
-    h1: "DOM Is Awesome",
-    button: "Get Started",
+  "cta": {
+    "h1": "DOM Is Awesome",
+    "button": "Get Started",
     "img-src": "img/header-img.png"
   },
   "main-content": {
@@ -46,7 +46,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-/*Create selectors by using any of the DOM element's methods
+/*Task 1:
+Create selectors by using any of the DOM element's methods
  Note that IDs have been used on all images. 
  Use the IDs to update src path content*/
 const headerImg = document.getElementById("cta-img");
@@ -54,3 +55,36 @@ headerImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+/*Task 2:
+ Update the HTML with the JSON data
+ Remember, NO direct updating of the HTML source is allowed.
+ Using your selectors, update the content to match the example file.
+ Remember to update the src attributes on images*/
+
+//Add content to Nav Bar
+
+
+
+//Add content to h1
+const newH1 = document.querySelector("h1");
+newH1.textContent = siteContent["cta"]["h1"];
+
+//Add content to the Button
+const newButton = document.querySelector("button");
+newButton.textContent = siteContent["cta"]["button"];
+
+//Add content to h4
+const mainText = document.querySelectorAll("h4");
+mainText[0].textContent = siteContent["main-content"]["features-h4"];
+
+mainText[1].textContent = siteContent["main-content"]["about-h4"];
+
+//Add content to Features P
+const newP = document.querySelectorAll("p");
+newP[0].textContent = siteContent["main-content"]["features-content"];
+
+newP[1].textContent = siteContent["main-content"]["about-content"];
+
+
+
