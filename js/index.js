@@ -1,5 +1,5 @@
 const siteContent = {
-  "nav": {
+  nav: {
     "nav-item-1": "Services",
     "nav-item-2": "Product",
     "nav-item-3": "Vision",
@@ -8,9 +8,9 @@ const siteContent = {
     "nav-item-6": "Contact",
     "img-src": "img/logo.png"
   },
-  "cta": {
-    "h1": "DOM Is Awesome",
-    "button": "Get Started",
+  cta: {
+    h1: "DOM Is Awesome",
+    button: "Get Started",
     "img-src": "img/header-img.png"
   },
   "main-content": {
@@ -64,6 +64,25 @@ middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
 //Add content to Nav Bar
 
+const navContent = document.getElementsByTagName("a");
+
+const navItems1 = navContent[0];
+navItems1.textContent = siteContent["nav"]["nav-item-1"];
+
+const navItems2 = navContent[1];
+navItems2.textContent = siteContent["nav"]["nav-item-2"];
+
+const navItems3 = navContent[2];
+navItems3.textContent = siteContent["nav"]["nav-item-3"];
+
+const navItems4 = navContent[3];
+navItems4.textContent = siteContent["nav"]["nav-item-4"];
+
+const navItems5 = navContent[4];
+navItems5.textContent = siteContent["nav"]["nav-item-5"];
+
+const navItems6 = navContent[5];
+navItems6.textContent = siteContent["nav"]["nav-item-6"];
 
 
 //Add content to h1
@@ -86,5 +105,15 @@ newP[0].textContent = siteContent["main-content"]["features-content"];
 
 newP[1].textContent = siteContent["main-content"]["about-content"];
 
+//Add content to BOTTOM-CONTENT h4
+const bottomTitle = document.querySelectorAll(
+  ".bottom-content .text-content h4"
+);
 
+bottomTitle[0].textContent = siteContent["main-content"]["services-h4"];
 
+bottomTitle[1].textContent = siteContent["main-content"]["product-h4"];
+
+bottomTitle[2].textContent = siteContent["main-content"]["vision-h4"];
+
+mainText[1].textContent = siteContent["main-content"]["about-h4"];
