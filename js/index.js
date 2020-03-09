@@ -51,3 +51,6 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
  Use the IDs to update src path content*/
 const headerImg = document.getElementById("cta-img");
 headerImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+const middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
