@@ -139,3 +139,17 @@ contactP[2].textContent = siteContent["contact"]["email"];
 const footerInfo = document.querySelectorAll("footer p");
 
 footerInfo[0].textContent = siteContent["footer"]["copyright"];
+
+
+/*Add Task 3: Add new content
+ Change the color of the navigation text to be green.
+ Utilize .appendChild() and .prepend() to add two new items to the navigation system. You can call them whatever you want.
+ Check your work by looking at the original html in the browser*/
+
+
+const greenNav = document.querySelectorAll("header nav a");
+for ( let i = 0; i < greenNav.length; i++) {
+  greenNav[i].style.color ="green";
+}
+
+
